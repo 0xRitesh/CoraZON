@@ -214,3 +214,109 @@ header .icons ul li:last-child span {
   font-size: 0.6rem;
 }
 
+
+/* main body styles */ 
+
+main {
+  padding: 0 5% 3rem;
+}
+
+main .product-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main .product-grid__card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+main .product-grid__card:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+@media screen and (min-width: 480px) {
+  main .product-grid__card {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  main .product-grid__card {
+    width: 31%;
+  }
+}
+
+main .product-grid__card__image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+main .product-grid__card__details {
+  width: 60%;
+}
+
+main .product-grid__card__details p:first-child {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+main .product-grid__card__details p:last-child {
+  color: var(--grey);
+}
+
+main .product-grid__card__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+main .product-grid__card__icons button {
+  all: unset;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main .product-grid__card__icons button:first-child {
+  margin-bottom: 0.7rem;
+}
+
+main .product-grid__card__icons button img {
+  max-width: 90%;
+}
